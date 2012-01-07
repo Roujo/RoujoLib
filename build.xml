@@ -31,7 +31,11 @@
          ================================= -->
     <target name="default" depends="init" description="Default compilation">
         <!-- Compile the java code from ${src} into ${build} -->
-    	<javac srcdir="${src}" destdir="${build}"/>
+    	<javac srcdir="${src}" destdir="${build}">
+    		<classpath>
+    			<pathelement location="lib/mail.jar"/>
+    		</classpath>
+    	</javac>
     </target>
 
 </project>
