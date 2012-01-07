@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== 
+     Jan 6, 2012 7:00:21 PM                                                        
+
+     RoujoLib    
+     A Java helper library I developed to help me in my various personal projects.
+                   
+     Jonathan                                                                
+     ====================================================================== -->
+<project name="RoujoLib" default="default">
+    <description>
+            A Java helper library I developed to help me in my various personal projects.
+    </description>
+
+    <!-- ================================= 
+          target: default              
+         ================================= -->
+    <target name="default" depends="depends" description="A Java helper library I developed to help me in my various personal projects.">
+        
+    </target>
+
+    <!-- - - - - - - - - - - - - - - - - - 
+          target: depends                      
+         - - - - - - - - - - - - - - - - - -->
+    <target name="depends">
+    </target>
+
+</project>
