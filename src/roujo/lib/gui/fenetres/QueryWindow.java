@@ -15,13 +15,13 @@ public class QueryWindow extends JFrame{
 	
 	public enum Effet {Quitter, Recommencer};
 	
-	// Paneau de la fenêtre
+	// Paneau de la fenÃªtre
 	private JPanel panel = new JPanel();
 
 	// Layout en grille
 	private GridLayout grille = new GridLayout(2,1);
 	
-	// Message de la fenêtre
+	// Message de la fenÃªtre
 	private JLabel message;
 	
 	public QueryWindow(String title, String message, String[] boutons, Effet[] effets) {

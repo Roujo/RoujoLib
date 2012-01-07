@@ -4,7 +4,7 @@ public class ChiffreRomainInvalide extends ExceptionRomaine {
 	private static final long serialVersionUID = 1L;
 
 	public ChiffreRomainInvalide() {
-		super("Un caractère invalide a été entré.");
+		super("Un caractÃ¨re invalide a Ã©tÃ© entrÃ©.");
 	}
 
 }

@@ -37,7 +37,7 @@ public class Menu extends JFrame {
 	private JLabel titre = new JLabel("Menu Principal");
 	
 	// Boutons de choix
-	private JButton bouton1 = new JButton("Créer une partie");
+	private JButton bouton1 = new JButton("CrÃ©er une partie");
 	private JButton bouton3 = new JButton("Joindre une partie");
 	private JButton bouton2 = new JButton("Options");
 	private JButton bouton4 = new JButton("Infos");
@@ -96,7 +96,7 @@ public class Menu extends JFrame {
 	
 	class Bouton4Listener implements ActionListener{
 		public void actionPerformed(ActionEvent e) {
-			String titre = "Crédits";
+			String titre = "CrÃ©dits";
 			String message = "Jeu fait par Jonathan Rouillard. Version 0.3.0";
 			String[] boutons = new String[]{"Quitter"};
 			Effet[] effets = new Effet[]{Effet.Quitter};

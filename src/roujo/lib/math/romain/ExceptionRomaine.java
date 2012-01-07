@@ -4,7 +4,7 @@ public abstract class ExceptionRomaine extends Exception {
 	private static final long serialVersionUID = 1L;
 
 	public ExceptionRomaine(){
-		super("Exception: Problème de chiffre romain!");
+		super("Exception: ProblÃ¨me de chiffre romain!");
 	}
 	
 	public ExceptionRomaine(String string) {
