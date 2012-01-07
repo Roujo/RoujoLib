@@ -11,18 +11,27 @@
     <description>
             A Java helper library I developed to help me in my various personal projects.
     </description>
+	
+	<property name="src" location="src"/>
+	<property name="build" location="build"/>
+	<property name="dist" location="dist"/>
+
+	<!-- - - - - - - - - - - - - - - - - - 
+          target: init                      
+         - - - - - - - - - - - - - - - - - -->
+    <target name="init">
+    	<!-- Set the timestamp -->
+    	<tstamp/>      
+    	<!-- Create build directory -->
+    	<mkdir dir="${build}"/>
+    </target>
 
     <!-- ================================= 
           target: default              
          ================================= -->
-    <target name="default" depends="depends" description="A Java helper library I developed to help me in my various personal projects.">
-        
-    </target>
-
-    <!-- - - - - - - - - - - - - - - - - - 
-          target: depends                      
-         - - - - - - - - - - - - - - - - - -->
-    <target name="depends">
+    <target name="default" depends="init" description="Default compilation">
+        <!-- Compile the java code from ${src} into ${build} -->
+    	<javac srcdir="${src}" destdir="${build}"/>
     </target>
 
 </project>
