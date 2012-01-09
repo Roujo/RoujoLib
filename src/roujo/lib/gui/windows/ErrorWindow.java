@@ -1,4 +1,4 @@
-package roujo.lib.gui.fenetres;
+package roujo.lib.gui.windows;
 
 public class ErrorWindow extends QueryWindow {
 	private static final long serialVersionUID = 1L;

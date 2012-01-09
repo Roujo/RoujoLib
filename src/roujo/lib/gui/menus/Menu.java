@@ -11,10 +11,10 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
-import roujo.lib.gui.fenetres.ErrorWindow;
-import roujo.lib.gui.fenetres.QueryWindow;
-import roujo.lib.gui.fenetres.QueryWindow.Effet;
 import roujo.lib.gui.util.QuitButtonListener;
+import roujo.lib.gui.windows.ErrorWindow;
+import roujo.lib.gui.windows.QueryWindow;
+import roujo.lib.gui.windows.QueryWindow.Effet;
 
 //import util.persistance.GestionInformations;
 

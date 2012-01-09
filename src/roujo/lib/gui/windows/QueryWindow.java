@@ -1,4 +1,4 @@
-package roujo.lib.gui.fenetres;
+package roujo.lib.gui.windows;
 
 import roujo.lib.gui.util.QuitButtonListener;
 
