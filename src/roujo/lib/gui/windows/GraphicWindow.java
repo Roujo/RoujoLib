@@ -72,6 +72,8 @@ public class GraphicWindow extends JFrame {
 			buffer.show();
 
 		graphics.dispose();
-		this.g2d.dispose();
+		if (this.g2d != null) {
+			this.g2d.dispose();
+		}
 	}
 }
