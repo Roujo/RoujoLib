@@ -1,4 +1,4 @@
-package roujo.lib.persistance;
+package roujo.lib.io;
 
 import java.io.File;
 import java.io.FileInputStream;
