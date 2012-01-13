@@ -15,9 +15,6 @@ import javax.swing.JFrame;
 public class GraphicWindow extends JFrame {
 	private static final long serialVersionUID = 1L;
 
-	private static final int HEIGHT = 600;
-	private static final int WIDTH = 800;
-
 	// Graphics components
 	private Canvas canvas; // Our drawing component
 	private BufferStrategy buffer;
@@ -28,11 +25,13 @@ public class GraphicWindow extends JFrame {
 	private Graphics2D g2d;
 	private Color background;
 
-	public GraphicWindow() {
+	public GraphicWindow(String title, int width, int height) {
+		this.setTitle(title);
+		this.setSize(width, height);
 		setIgnoreRepaint(true);
 		canvas = new Canvas();
 		canvas.setIgnoreRepaint(true);
-		canvas.setSize(WIDTH, HEIGHT);
+		canvas.setSize(width, height);
 		add(canvas);
 		pack();
 
@@ -41,7 +40,7 @@ public class GraphicWindow extends JFrame {
 		this.ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
 		this.gd = ge.getDefaultScreenDevice();
 		this.gc = gd.getDefaultConfiguration();
-		this.bi = gc.createCompatibleImage(WIDTH, HEIGHT);
+		this.bi = gc.createCompatibleImage(width, height);
 		this.background = Color.BLACK;
 	}
 
@@ -62,7 +61,7 @@ public class GraphicWindow extends JFrame {
 	public Graphics2D getG2D() {
 		this.g2d = bi.createGraphics();
 		this.g2d.setColor(background);
-		this.g2d.fillRect(0, 0, WIDTH, HEIGHT);
+		this.g2d.fillRect(0, 0, getWidth(), getHeight());
 		return this.g2d;
 	}
 
