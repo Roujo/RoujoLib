@@ -1,4 +1,4 @@
-package roujo.lib.console;
+package roujo.lib.io.console;
 
 import roujo.lib.StringHelper;
 

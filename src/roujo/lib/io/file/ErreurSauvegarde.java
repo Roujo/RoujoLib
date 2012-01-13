@@ -1,4 +1,4 @@
-package roujo.lib.io;
+package roujo.lib.io.file;
 
 public class ErreurSauvegarde extends Exception {
 	private static final long serialVersionUID = 1L;

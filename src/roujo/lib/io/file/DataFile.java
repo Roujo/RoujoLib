@@ -1,4 +1,4 @@
-package roujo.lib.io;
+package roujo.lib.io.file;
 
 import java.io.File;
 import java.io.FileInputStream;
