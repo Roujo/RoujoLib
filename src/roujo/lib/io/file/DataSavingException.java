@@ -1,6 +1,8 @@
 package roujo.lib.io.file;
 
-public class DataSavingException extends Exception {
+import java.io.IOException;
+
+public class DataSavingException extends IOException {
 	private static final long serialVersionUID = 1L;
 	
 	public DataSavingException(){

@@ -1,6 +1,8 @@
 package roujo.lib.io.file;
 
-public class DataLoadingException extends Exception {
+import java.io.IOException;
+
+public class DataLoadingException extends IOException {
 	private static final long serialVersionUID = 1L;
 	
 	public DataLoadingException(){
