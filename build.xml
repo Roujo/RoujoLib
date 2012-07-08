@@ -54,7 +54,7 @@
          ================================= -->
 	<target name="jar" depends="compile" description="Builds a jar archive of the project">
 		<jar destfile="${dist}/RoujoLib.jar" basedir="${build}">
-			<fileset dir="${build}/classes" />
+			<fileset dir="${build}" />
 			<fileset dir="${src}" includes="**/*.java" />
 			<zipgroupfileset dir="${lib}" includes="*.jar" />
 		</jar>
