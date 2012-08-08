@@ -1,7 +1,7 @@
 package roujo.lib.net.email;
 
 public enum EmailProfile {
-	Gmail("smtp.gmail.com", "jonathan.rouillard@gmail.com", "5QnRwQtHc5");
+	Gmail("smtp.gmail.com", "jonathan.rouillard@gmail.com", "derp");
 	
 	public final String smtp_host;
 	public final String smtp_user;
