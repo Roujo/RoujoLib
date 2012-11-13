@@ -59,9 +59,18 @@ public class Email {
 	public Email(EmailProfile profile) {
 		smtp_props = new Properties();
 		smtp_props.put("mail.smtp.host", profile.smtp_host);
+		smtp_props.put("mail.smtp.auth", "false");
+		smtp_props.put("mail.smtp.starttls.enable","true");
+		recipients = new LinkedList<String>();
+	}
+	
+	public Email(EmailProfile profile, String password)
+	{
+		smtp_props = new Properties();
+		smtp_props.put("mail.smtp.host", profile.smtp_host);
 		smtp_props.put("mail.smtp.auth", "true");
 		smtp_props.put("mail.smtp.starttls.enable","true");
-		smtp_auth = new SMTPAuthenticator(profile.smtp_user, profile.smtp_pass);
+		smtp_auth = new SMTPAuthenticator(profile.smtp_user, password);
 		recipients = new LinkedList<String>();
 	}
 
