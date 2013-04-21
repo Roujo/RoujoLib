@@ -29,6 +29,7 @@ public class PersistenceEngine {
 		Object object;
 		in = new ObjectInputStream(new FileInputStream(filename));
 		object = in.readObject();
+		in.close();
 		return object;
 	}
 }
